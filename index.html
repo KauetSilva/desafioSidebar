@@ -3,128 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=dev
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Desafio: sidebar</title>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <h1>Dashboard</h1>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <i class="photo"><img src="images\images\logo.svg" alt=""> </i>
+                <div class="logo_name"></div>
+            </div>
+            <i class="menu"><img src="images\images\menu.svg" id="btn" alt="menu"></i>
         </div>
-
-        <div class="navigation">
-            <ul>
-                <li class="list">
-            
-                    <a href="#">
-                        <span class="icon"><img src="images\images\menu.svg" alt="menu">  </span>
-                        <span class="title">  Menu </span>
-                    </a>
-                    </li>
-
-                <li class="list input">
-            
-                    <a href="#">
-                        
-                        <span class="input">   </span>
-                    </a>
-                    </li>   
-                    
+        <ul class="nav_list">
+            <li>
+                <i class="search"><img src="images\images\search.svg" alt="search"></i>
+                <input type="text" placeholder="Search...">
                 
-                <li class="list">
-            
-                    <a href="#">
-                        <span class="icon"><img src="images\images\menu.svg" alt="menu">  </span>
-                        <span class="title">  Menu </span>
-                    </a>
-                    </li>
+               <span class="tooltip">Search</span> 
+            </li>
 
-
-                
-                
-                
-                <li class="list active">
-            
-                        <a href="#">
-                            <span class="icon"><img src="images\images\search.svg" alt="busca">  </span>
-                            <span class="title">  Busca </span>
-                            <span class="input">   </span>
-                        </a>
-                        </li>   
-                
-                       
-        
-
-                <li class="list">
-            
-                    <a href="#">
-                        <span class="icon"><img src="images\images\grid.svg " alt="grid"> </span>
-                        <span class="title">  Dashboard </span>  
-                    </a>
-                    </li>  
-                      
-                    <li class="list">
-            
-                        <a href="#">
-                            <span class="icon"><img src="images\images\pet.svg" alt="pet">  </span>
-                            <span class="title">  Pets </span>   
-                        </a>
-                        </li>
-                             
-                       
-                        <li class="list">
-            
-                            <a href="#">
-                                <span class="icon"><img src="images\images\user.svg" alt="user"> </span>
-                                <span class="title">  Clientes </span>   
-                            </a>
-                            </li>
-
-
-                            <li class="list">
-            
-                                <a href="#">
-                                    <span class="icon"><img src="images\images\vet.svg " alt="vet">  </span>
-                                    <span class="title">  Vets </span>    
-                                </a>
-                                </li>
-    
-                                <li class="list">
-            
-                                    <a href="#">
-                                        <span class="icon"> <img src="images\images\settings.svg" alt="settings"> </span>
-                                        <span class="title">  Ajustes </span>     
-                                    </a>
-                                    </li>
-                           
-                                    <li class="list j">
-            
-                                        <a href="#">
-                                            <span class="rectangle">  </span> 
-                                            <span class="iconLog-out"> <img src="images\images\log-out.svg" alt="settings"> </span>
-                                            <span class="title1"> Eleanor Pena  </span>     
-                                            <span class="avatar"> <img src="images\images\photo.jpg" alt="photo"> </span>
-                                            <span class="subtitle"> Veterinária </span> 
-                                            
-                                        </a>
-                                        </li>
-
-                                       
+            <li>
+                <a href="#">
+                    <i class="grid"><img src="images\images\grid.svg" alt="grid"></i>
+                    <span class="links_name">Dashboard</span>
                 </a>
-                </li>
-            </ul>
+               <span class="tooltip">Dashboard</span> 
+            </li>
+            <li>
+                <a href="#">
+                    <i class="pet"><img src="images\images\pet.svg" alt="grid"></i>
+                    <span class="links_name">Pets</span>
+                </a>
+               <span class="tooltip">Pets</span> 
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="user"><img src="images\images\user.svg" alt="grid"></i>
+                    <span class="links_name">clientes</span>
+                </a>
+                <span class="tooltip">Clientes</span> 
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="settings"><img src="images\images\settings.svg" alt="grid"></i>
+                    <span class="links_name">Ajustes</span>
+                </a>
+                <span class="tooltip">Ajustes</span> 
+            </li>
+        </ul>
+        
+        <div class="profile_content">
+            <div class="back"></div>
+            <div class="profile">
+                <div class="profile_details">
+                    
+                 <img src="/images/images/photo.jpg" alt="">  
+                 
+                 <div class="name_job">
+                    
+                      <div class="name">Eleanor Pena</div>
+                      <div class="job">Veterinária</div>
+                  </div>
+                </div>
+                <i class="log_out"><img src="images\images\log-out.svg" id="log_out" alt=""></i>
+            </div>
         </div>
- 
+    </div>
 
-    </header>
-    
-    <footer>
-
-    </footer>
-    
+    <div class="home_content">
+            <div class="text">Dashboard</div>
+    </div>
     <script src="script.js"></script>
+    
+
 </body>
-</html>
